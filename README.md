@@ -203,3 +203,55 @@ External APIs
 ---
 
 # 10. Repository Structure
+
+Frontend folder will contain:
+
+- worker registration interface
+- insurance dashboard
+- claim status interface
+
+Backend folder will contain:
+
+- API endpoints
+- risk prediction model
+- claim processing logic
+- database integration
+
+---
+
+# 11. Development Roadmap
+
+Phase 1 – Ideation & Planning
+
+- Problem research
+- system architecture
+- AI workflow design
+- documentation
+
+Phase 2 – Automation & Protection
+
+- worker registration
+- insurance policy management
+- dynamic premium calculation
+- automated claim triggers
+
+Phase 3 – Scale & Optimization
+
+- fraud detection
+- instant payout simulation
+- analytics dashboard
+- predictive disruption analysis
+
+---
+
+# 12. Expected Impact
+
+GigShield AI aims to provide financial protection for gig workers against sudden income loss caused by uncontrollable disruptions.
+
+The platform offers a simple, automated, and AI-driven insurance solution specifically designed for the gig economy.
+
+---
+
+# Demo Video
+
+(Phase-1 demo video link will be added here)
