@@ -5,7 +5,7 @@ Guidewire DEVTrails Hackathon 2026
 
 Team Name: CoreX
 
-Team Members:
+Team Members
 - Pothireddy Akhil Kumar Reddy
 - B Manoj Kumar
 - Nagam Teja Narayana Reddy
@@ -16,11 +16,11 @@ Team Members:
 
 # 1. Problem Statement
 
-India’s gig economy relies heavily on delivery workers working with platforms such as Swiggy, Zomato, Amazon, Zepto and Dunzo.
+India’s gig economy relies heavily on delivery partners working with platforms such as Swiggy, Zomato, Amazon, and Zepto.
 
-However, these workers often face external disruptions such as:
+However, these workers frequently face external disruptions such as:
 
-- Heavy rainfall
+- Heavy rain
 - Extreme heat
 - Severe air pollution
 - Traffic congestion
@@ -28,9 +28,9 @@ However, these workers often face external disruptions such as:
 
 These disruptions reduce working hours and cause **loss of income**.
 
-Currently, gig workers do not have insurance protection for such income loss.
+Currently, gig workers do not have insurance protection specifically designed for such income loss.
 
-GigShield AI solves this problem by creating an **AI-powered parametric insurance system** that automatically compensates gig workers when disruptions occur.
+GigShield AI aims to solve this problem by providing an **AI-powered parametric insurance platform that automatically compensates gig workers when disruptions occur.**
 
 ---
 
@@ -38,70 +38,95 @@ GigShield AI solves this problem by creating an **AI-powered parametric insuranc
 
 Persona: Food Delivery Partner (Swiggy / Zomato)
 
-Example scenario:
+Example:
 
 Ravi is a delivery partner working in Hyderabad.  
-He works around 8 hours daily and earns approximately ₹4000 per week.
+He typically works 8 hours per day and earns around ₹4000 per week.
 
-During extreme rain or severe pollution days, deliveries drop significantly and Ravi cannot complete orders.
+During heavy rainfall days or severe pollution conditions, delivery demand drops significantly and Ravi cannot complete enough orders.
 
-This results in income loss.
+This results in loss of income.
 
-GigShield AI provides **weekly income protection insurance** that automatically compensates Ravi during such disruptions.
+GigShield AI provides **weekly income protection insurance** that automatically compensates workers like Ravi when such disruptions occur.
 
 ---
 
 # 3. Proposed Solution
 
-GigShield AI is an AI-powered platform that monitors environmental conditions affecting delivery operations.
+GigShield AI is an AI-enabled parametric insurance platform designed for gig delivery workers.
 
-The platform uses APIs to collect real-time environmental data and applies machine learning models to estimate disruption risk.
+The platform continuously monitors environmental conditions affecting delivery operations.
 
-If disruption thresholds are exceeded, the system automatically:
-
-1. Detects disruption conditions
-2. Triggers an insurance claim
-3. Simulates payout for lost income
+Using AI models, the system predicts disruption risk and automatically triggers claims when predefined conditions are met.
 
 Workers do not need to manually submit claims.
+
+The system automates:
+
+- disruption detection
+- risk prediction
+- claim triggering
+- payout simulation
 
 ---
 
 # 4. Application Workflow
 
 1. Worker registers on the platform
-2. Worker location and delivery zone are recorded
+2. Worker selects operating delivery zone
 3. System monitors environmental conditions using APIs
 4. AI model calculates disruption risk score
-5. If disruption threshold is crossed
-6. Claim is automatically triggered
+5. If disruption thresholds are crossed
+6. Insurance claim is automatically triggered
 7. Claim is processed
 8. Payment simulation is executed
 
 ---
 
-# 5. Parametric Triggers
+# 5. Hyper-Local Risk Zones (Innovation Feature)
 
-Parametric insurance uses predefined triggers to automate claims.
+GigShield AI introduces **Hyper-Local Risk Zones**.
+
+Instead of applying a single risk level to an entire city, the system divides cities into multiple operational zones.
+
+Example:
+
+Hyderabad
+
+- Zone A – High Flood Risk
+- Zone B – Medium Risk
+- Zone C – Low Risk
+
+Each zone has different disruption probabilities based on environmental and traffic conditions.
+
+Workers operating in safer zones receive lower premiums, while workers in high-risk zones receive higher coverage.
+
+This improves risk prediction accuracy and enables fair pricing.
+
+---
+
+# 6. Parametric Triggers
+
+Parametric insurance uses predefined triggers to automatically initiate claims.
 
 Example triggers used in GigShield AI:
 
 | Trigger | Condition | Impact |
-|------|------|------|
+|-------|-------|-------|
 Heavy Rain | Rainfall > 50 mm | Deliveries halted |
 Extreme Heat | Temperature > 45°C | Unsafe working conditions |
 Air Pollution | AQI > 300 | Outdoor work unsafe |
 Traffic Congestion | Traffic index above threshold | Delivery delays |
 
-When these triggers occur, the system automatically initiates claims.
+When these triggers occur, the system automatically processes insurance claims.
 
 ---
 
-# 6. Weekly Premium Model
+# 7. Weekly Premium Model
 
 Gig workers operate on a weekly earning cycle.
 
-Therefore the insurance premium is structured as a **weekly pricing model**.
+Therefore the insurance premium is structured using a **weekly pricing model**.
 
 | Risk Level | Weekly Premium | Coverage |
 |------|------|------|
@@ -109,47 +134,48 @@ Low Risk | ₹35 | ₹1200 |
 Medium Risk | ₹60 | ₹2500 |
 High Risk | ₹90 | ₹4000 |
 
-Premium values are dynamically adjusted using AI risk prediction.
+Premium values are dynamically adjusted using AI risk analysis.
 
 ---
 
-# 7. AI / Machine Learning Integration
+# 8. AI / Machine Learning Integration
 
-Machine learning is used for the following tasks.
+Machine learning is used in three major components.
 
-### Risk Prediction
+### 1. Risk Prediction
 
-The system analyzes environmental conditions to estimate disruption probability.
+The AI model analyzes environmental conditions to predict disruption probability.
 
-Input parameters include:
+Input parameters:
 
 - rainfall
 - temperature
 - AQI
 - traffic congestion
-- historical disruption patterns
+- simulated delivery demand
 
-Example risk score formula:
+Example simplified formula:
 
 Risk Score =
 0.4 × weather risk +
 0.3 × pollution risk +
-0.3 × traffic risk
+0.2 × traffic risk +
+0.1 × delivery demand drop
 
 ---
 
-### Dynamic Premium Calculation
+### 2. Dynamic Premium Calculation
 
-The system adjusts weekly premiums based on predicted disruption risk in the worker’s area.
+Weekly premiums are adjusted based on predicted disruption risk in the worker's operating zone.
 
-Low risk areas → lower premiums  
-High risk areas → higher premiums
+Low risk zones → lower premiums  
+High risk zones → higher premiums
 
 ---
 
-### Fraud Detection
+### 3. Fraud Detection
 
-The platform detects suspicious claims using:
+The system detects suspicious claims using:
 
 - GPS location verification
 - duplicate claim detection
@@ -158,9 +184,47 @@ The platform detects suspicious claims using:
 
 ---
 
-# 8. System Architecture
+# 9. External Data Sources
 
-The system architecture includes the following components:
+GigShield AI uses a combination of real-time APIs and simulated data.
+
+### Weather API
+
+Used to monitor rainfall and temperature conditions.
+
+Example parameters:
+
+- rainfall
+- temperature
+- humidity
+- weather alerts
+
+---
+
+### Air Quality API (AQI)
+
+Used to detect pollution levels affecting outdoor work.
+
+Example parameters:
+
+- AQI
+- PM2.5 levels
+
+---
+
+### Mock Delivery Data
+
+Since delivery platform data is not publicly available, the system uses simulated delivery activity data.
+
+Example data:
+
+- delivery demand
+- orders per hour
+- delivery success rate
+
+---
+
+# 10. System Architecture
 
 Worker Application  
 ↓  
@@ -180,13 +244,13 @@ Payment Simulation
 
 ---
 
-# 9. Technology Stack
+# 11. Technology Stack
 
 Frontend  
 React.js
 
 Backend  
-Python (FastAPI / Flask)
+Python (FastAPI or Flask)
 
 Database  
 MongoDB
@@ -198,33 +262,44 @@ External APIs
 
 - OpenWeather API
 - AQI API
-- Traffic API (mock data allowed)
+- Mock traffic data
 
 ---
 
-# 10. Repository Structure
+# 12. Repository Structure
+
+guidewire-hackathon-CoreX
+
+GigShield-AI  
+│  
+├── frontend  
+├── backend  
+│  
+├── README.md  
+├── architecture.png  
+└── ai_workflow.png
 
 Frontend folder will contain:
 
-- worker registration interface
+- worker registration UI
 - insurance dashboard
 - claim status interface
 
 Backend folder will contain:
 
 - API endpoints
-- risk prediction model
+- AI risk model
 - claim processing logic
 - database integration
 
 ---
 
-# 11. Development Roadmap
+# 13. Development Roadmap
 
 Phase 1 – Ideation & Planning
 
-- Problem research
-- system architecture
+- problem research
+- system architecture design
 - AI workflow design
 - documentation
 
@@ -240,18 +315,18 @@ Phase 3 – Scale & Optimization
 - fraud detection
 - instant payout simulation
 - analytics dashboard
-- predictive disruption analysis
+- predictive disruption insights
 
 ---
 
-# 12. Expected Impact
+# 14. Expected Impact
 
-GigShield AI aims to provide financial protection for gig workers against sudden income loss caused by uncontrollable disruptions.
+GigShield AI provides financial protection for gig workers by protecting their income from sudden disruptions.
 
-The platform offers a simple, automated, and AI-driven insurance solution specifically designed for the gig economy.
+The platform introduces an automated and AI-driven insurance system specifically designed for the gig economy.
 
 ---
 
 # Demo Video
 
-(Phase-1 demo video link will be added here)
+Phase-1 demo video link will be added here.
